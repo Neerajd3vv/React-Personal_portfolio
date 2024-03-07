@@ -11,9 +11,7 @@ const Contact = () => {
 
   // Customcursor code
 
-
   const [onHover, setOnHover] = useState("default");
-
 
   const bigBubbleFour = () => setOnHover("BigBubbleFour");
   const smallBubble = () => setOnHover("default");
@@ -123,7 +121,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-      <CustomCursor hoverAnimation={onHover}/>   
+      <CustomCursor hoverAnimation={onHover} />
     </>
   );
 };

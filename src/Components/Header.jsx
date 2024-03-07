@@ -12,6 +12,8 @@ function Header() {
     setSidePanelOpen(!isSidePanelOpen);
   };
 
+
+  
   // customCursor things
 
   const [onHover, setOnHover] = useState("default");
@@ -112,7 +114,7 @@ function Header() {
           </nav>
 
           {isSidePanelOpen && (
-            <div className="md:hidden fixed inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-black h-full bg-opacity-4 z-50">
+            <div className="md:hidden fixed inset-0 bg-gradient-to-b background-attachment-fixed  from-gray-900 via-gray-900 to-black h-full bg-opacity-4 z-50">
               <div className="flex justify-end p-8">
                 <button onClick={ToggleSideButton} className="text-white">
                   <svg

@@ -27,7 +27,6 @@ function About() {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
-      
     },
     BigBubble: {
       height: 150,

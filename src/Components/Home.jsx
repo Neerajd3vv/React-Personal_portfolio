@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 import CustomCursor from "../CutsomCursor";
 
 function Home() {
-  
   const [onHover, setOnHover] = useState("default");
-
-
 
   const bigBubbleTwo = () => setOnHover("BigBubbleTwo");
   const smallBubble = () => setOnHover("default");
@@ -15,8 +12,6 @@ function Home() {
 
   return (
     <>
-     
-
       <div className="text-white  pt-52 h-screen  ">
         <div className="  py-4  text-center pb-5  font-proteststrike tracking-wider   text-4xl ">
           <motion.span
@@ -26,7 +21,7 @@ function Home() {
               delay: 0.5,
               duration: 1,
             }}
-            className="bg-gradient-to-r from-gray-300 to-gray-200 text-transparent bg-clip-text"
+            className="bg-gradient-to-b from-blue-300 to-purple-300 text-transparent bg-clip-text"
             onMouseEnter={anotherOne}
             onMouseLeave={smallBubble}
           >
@@ -41,16 +36,16 @@ function Home() {
               delay: 0.3,
               duration: 1,
             }}
-            className="bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text"
+            className="bg-gradient-to-b from-oceangreen via-purple-300 to-Myblue   text-transparent bg-clip-text"
             onMouseEnter={bigBubbleTwo}
             onMouseLeave={smallBubble}
           >
             NEERAJ BHATT
           </motion.span>
         </div>
-        <div className="text-center font-bold  py-4 text-xl font-Poppins tracking-wider">
+        <div className="text-center font-bold  py-4 text-xl font-Hind tracking-wider">
           <motion.span
-          className="bg-gradient-to-r from-gray-200 to-gray-100 text-transparent bg-clip-text"
+            className="bg-gradient-to-b from-gray-100 to-gray-100 text-transparent bg-clip-text"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -65,8 +60,7 @@ function Home() {
           </motion.span>
         </div>
       </div>
-      <CustomCursor hoverAnimation={onHover}/> 
-      
+      <CustomCursor hoverAnimation={onHover} />
     </>
   );
 }
