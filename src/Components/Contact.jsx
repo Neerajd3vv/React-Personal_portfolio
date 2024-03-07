@@ -22,7 +22,7 @@ const Contact = () => {
           <motion.form
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{  delay: 0.3 }}
             ref={form}
             onSubmit={sendEmail}
             className="bg-Mainblack p-8 rounded-md shadow-md max-w-md w-full"

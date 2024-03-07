@@ -1,60 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import CustomCursor from "../CutsomCursor";
 
 function About() {
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  
 
   const [onHover, setOnHover] = useState("default");
 
-  useEffect(() => {
-    const mouseMovement = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
 
-    window.addEventListener("mousemove", mouseMovement);
-    return () => {
-      window.removeEventListener("mousemove", mouseMovement);
-    };
-  });
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-    BigBubble: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "yellow",
-      mixBlendMode: "difference",
-    },
-    BiggerBubble: {
-      height: 300,
-      width: 300,
-      x: mousePosition.x - 150,
-      y: mousePosition.y - 150,
-      backgroundColor: "#70d6ff",
-      mixBlendMode: "difference",
-    },
-  };
   const bigBubble = () => setOnHover("BigBubble");
   const smallBubble = () => setOnHover("default");
   const biggerBubble = () => setOnHover("BiggerBubble");
   return (
     <>
-      <motion.div
-        variants={variants}
-        animate={onHover}
-        className="bg-oceangreen h-8 w-8 rounded-full fixed pointer-events-none top-0 left-0"
-      />
+      
       <div className=" pt-14  lg:pt-32 text-white ">
         <div className=" text-5xl flex justify-center text-gray-300 font-Protest tracking-wider ">
           <h1 className="" onMouseEnter={bigBubble} onMouseLeave={smallBubble}>
@@ -102,6 +62,7 @@ function About() {
           </motion.div>
         </div>
       </div>
+      <CustomCursor hoverAnimation={onHover}/>
     </>
   );
 }

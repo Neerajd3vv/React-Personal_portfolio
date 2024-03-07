@@ -32,7 +32,7 @@ const CustomCursor = ({ hoverAnimation }) => {
     BigBubble: {
       height: 150,
       width: 150,
-      backgroundColor: "white",
+      backgroundColor: "yellow",
       mixBlendMode: "difference",
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
@@ -80,6 +80,14 @@ const CustomCursor = ({ hoverAnimation }) => {
 
       x: mousePosition.x - 7.5,
       y: mousePosition.y - 7.5,
+    },
+    BiggerBubble: {
+      height: 300,
+      width: 300,
+      x: mousePosition.x - 150,
+      y: mousePosition.y - 150,
+      backgroundColor: "#70d6ff",
+      mixBlendMode: "difference",
     },
   };
 

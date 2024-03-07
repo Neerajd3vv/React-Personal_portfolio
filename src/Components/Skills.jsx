@@ -23,9 +23,9 @@ function Skills() {
     <>
       <div className="h-screen my-28">
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
+          initial={{ opacity: 0, y:-100 }}
+          animate={{ opacity: 1,y:0 }}
+          transition={{  delay: 0.1 }}
           className=" flex justify-center text-white mb-4 font-proteststrike text-6xl tracking-wide"
         >
           <h1
@@ -71,9 +71,9 @@ function Skills() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
+          initial={{ opacity: 0, y:-100 }}
+          animate={{ opacity: 1,y:0 }}
+          transition={{  delay: 0.1 }}
           className=" flex justify-center text-white mb-4 font-proteststrike text-6xl tracking-wide my-20"
         >
           <h1

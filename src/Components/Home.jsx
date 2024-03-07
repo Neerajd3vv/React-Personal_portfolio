@@ -43,7 +43,7 @@ function Home() {
             NEERAJ BHATT
           </motion.span>
         </div>
-        <div className="text-center font-bold  py-4 text-xl font-Hind tracking-wider">
+        <div className="text-center font-bold   py-4 text-xl font-Mullish ">
           <motion.span
             className="bg-gradient-to-b from-gray-100 to-gray-100 text-transparent bg-clip-text"
             initial={{ opacity: 0 }}
